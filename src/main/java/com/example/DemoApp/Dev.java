@@ -8,8 +8,14 @@ public class Dev {
 //    @Autowired // Field Injection
     Laptop laptop;
 
-    // constructor Injection no need for @Autowired
-    public Dev(Laptop laptop) {
+//    // constructor Injection no need for @Autowired
+//    public Dev(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
+
+
+    @Autowired // Setter Injection
+    public void setLaptop(Laptop laptop) {
         this.laptop = laptop;
     }
 
