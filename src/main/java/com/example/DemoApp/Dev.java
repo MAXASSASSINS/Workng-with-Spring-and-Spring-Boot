@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Dev {
 
-//    @Autowired // Field Injection
-    Laptop laptop;
+    @Autowired // Field Injection
+    Computer computer;
 
 //    // constructor Injection no need for @Autowired
 //    public Dev(Laptop laptop) {
@@ -14,13 +14,13 @@ public class Dev {
 //    }
 
 
-    @Autowired // Setter Injection
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
-    }
+//    @Autowired // Setter Injection
+//    public void setLaptop(Laptop laptop) {
+//        this.laptop = laptop;
+//    }
 
     public void build(){
-        laptop.compile();
+        computer.compile();
         System.out.println("I am building a cool project :-)");
     }
 }
